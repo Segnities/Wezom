@@ -5,6 +5,7 @@ Loaders:
 1. style - loader
 2. sass - loader
 3. css - loader
+4. file - loader
 
 Plugins:
 1. html-webpack-plugin// production && development mode
