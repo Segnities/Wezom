@@ -8,9 +8,9 @@ Loaders:
 4. file - loader
 
 Plugins:
-1. html-webpack-plugin// production && development mode
-2. clean-webpack-plugin//production mode
-3. mini-css-extract-plugin//production mode
-4. css-minimizer-webpack-plugin//production mode
-5. terser-webpack-plugin//production mode
+1. html-webpack-plugin
+2. clean-webpack-plugin
+3. mini-css-extract-plugin
+4. css-minimizer-webpack-plugin
+5. terser-webpack-plugin
 6. merge-plugin
