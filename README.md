@@ -1,6 +1,8 @@
 # Wezom
 WEBPACK CONFIGURE:
 
+development/production version
+
 Loaders: 
 1. style - loader
 2. sass - loader
