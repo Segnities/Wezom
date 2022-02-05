@@ -18,105 +18,16 @@
 }
 
 //VARIABLES
-
-//colors
-$orange: #FFBE48;
-$dark-blue:#33485D;
-$dark-grey:#5C6D7D;
-
-//font-size
-$fz-12:12px;
-
+@import './variables.scss';
 //MIXINS
-@mixin navbar-hover-effect() {
-    &:hover {
-        font-weight: bolder;
-        border-bottom: 1px solid $dark-grey;
-        padding-bottom: 3px;
-        color: $dark-grey;
-    }
-}
-
-@mixin star-color {
-    .rating-color {
-        color: #FFA800;
-        font-size: 10px;
-        opacity: 1;
-    }
-
-}
-
-@mixin media-query-navbar-min-width($min-width, $value) {
-    @media (min-width:$min-width) {
-        width: $value;
-    }
-}
-
-@mixin media-query-navbar-max-width($max-width, $value) {
-    @media (max-width:$max-width) {
-        width: $value;
-    }
-}
-
-@mixin product-option() {
-    .product-option {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 1rem;
-        list-style: disc;
-        margin: auto;
-        font-size: 14px;
-        color: $dark-blue;
-        font-weight: 515;
-
-        li {
-            margin-right: 20px;
-            font-size: 11px;
-
-            &:first-child {
-                list-style-type: none;
-            }
-
-            &::marker {
-                color: #DDE8F0;
-            }
-
-            a {
-                color: $dark-blue;
-                text-decoration: none;
-                @include navbar-hover-effect();
-            }
-
-        }
-    }
-
-    .product-option-active {
-        border-bottom: 2px $dark-blue solid;
-        font-weight: bold;
-    }
-}
-
-@mixin hover-icon {
-    background-color: #47B39C;
-    border: 1px solid #47B39C;
-}
-
-@mixin product-action {
-    width: 36%;
-    height: 50px;
-    text-align: start;
-    border-radius: 0 0 0 10px;
-}
-
-@mixin container-fluid-margins {
-    margin-left: 2%;
-    margin-right: 2%;
-}
+@import './mixins.scss';
 
 //STYLES
 
 //Header start
-
+body{
+    color: $dark-blue;
+}
 //Navbar start
 .navbar {
     position: relative;
@@ -729,6 +640,9 @@ $fz-12:12px;
 
         width: 45%;
         margin-right: 6%;
+        .user-login{
+            font-size: 13px;
+        }
 
         .comments-declaration {
             h4 {
