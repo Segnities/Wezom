@@ -35,7 +35,7 @@
           <li><a href="#"><b>Ru</b></a></li>
         </ul>
         <div class="authorization">
-          <a href="#"><b>Увійти</b><img src="assets/img/icons/authorazation-icon.svg" alt="#" class="ms-2"></a>
+          <a href="#"><b>Увійти</b><svg class="ms-2"><use href="./sprites.svg#authorazation"></use></svg></a>
         </div>
       </div>
     </nav>
@@ -46,7 +46,14 @@
           <div class="catalog dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="assets/img/icons/burger.svg" alt="">
+              <svg width="29" height="23" viewbox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg" display="none">
+                <symbol id="burger">
+                <g>
+                <path d="M1.5 2H27M27 21.5H1.5M1.5 11.5H17" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </g>
+                </symbol>
+            </svg>
+              <svg><use href="#burger"></use></svg>
               <b class="h5">каталог</b>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -329,8 +336,9 @@
             <div class="client-tel d-flex justify-content-center">
               <form action="#" method="post" class="mt-3">
                 <div class="input-group">
-                  <input type="tel" placeholder="+38(0XX) XX-XX-XXX" class="form-control">
-                  <button class="btn btn-send-phone" type="button">Відправити</button>
+                  <input type="tel" placeholder="+38 (0XX)-XX-XX-XXX" class="form-control"
+                  pattern="^\+[38]{2}\s\((\d{3})\)-\d{2}-\d{2}-\d{3}" required>
+                  <button class="btn btn-send-phone" type="submit">Відправити</button>
                 </div>
               </form>
             </div>
