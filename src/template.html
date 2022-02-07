@@ -119,19 +119,25 @@
           <div class="product-show d-md-flex">
             <div class="product-images float-start w-55">
               <aside class="product-scroller float-start h-100">
-                <input type="image" src="assets/img/icons/path-up.svg" alt="#" class="path-scroller">
-                <button class="active-product-scroller product-scroller-img"><img
+                <input type="image" src="assets/img/icons/path-up.svg" alt="#" class="path-scroller" onclick="slider.nextSlide(-1)">
+                <button class="product-scroller-img" onclick="slider.currentSlide(1)"><img
                     src="assets/img/products/product-in-scroll-1.svg" loading="lazy" alt=""></button>
-                <button class="product-scroller-img"><img src="assets/img/products/product-in-scroll-2.svg"
+                <button class="product-scroller-img " onclick="slider.currentSlide(2)"><img src="assets/img/products/product-in-scroll-2.svg"
                     loading="lazy" alt=""></button>
-                <button class="product-scroller-img"><img src="assets/img/products/product-in-scroll-3.svg"
+                <button class="product-scroller-img" onclick="slider.currentSlide(3)"><img src="assets/img/products/product-in-scroll-3.svg"
                     loading="lazy" alt=""></button>
-                <button class="product-scroller-img"><img src="assets/img/products/product-in-scroll-4.svg"
+                <button class="product-scroller-img" onclick="slider.currentSlide(4)"><img src="assets/img/products/product-in-scroll-4.svg"
                     loading="lazy" alt=""></button>
-                <input type="image" src="assets/img/icons/path-down.svg" alt="#" class="path-scroller">
+                <input type="image" src="assets/img/icons/path-down.svg" alt="#" class="path-scroller" onclick="slider.nextSlide(1)">
               </aside>
-              <img src="assets/img/products/main-product.svg" alt="" id="carouselExampleIndicators"
-                class="main-product-img" loading="lazy">
+              
+              <img src="assets/img/products/main-product.svg" alt="" class="main-product-img" loading="lazy">
+              <img src="assets/img/products/product-in-scroll-1.svg" alt="" class="main-product-img" loading="lazy">
+              <img src="assets/img/products/product-in-scroll-2.svg" alt="" class="main-product-img" loading="lazy">
+              <img src="assets/img/products/product-in-scroll-3.svg" alt="" class="main-product-img" loading="lazy">
+              <img src="assets/img/products/product-in-scroll-4.svg" alt="" class="main-product-img" loading="lazy">
+                
+              
             </div>
 
             <div class="product-deal-part float-end w-45">
@@ -352,7 +358,7 @@
     <p>2022 © Wezom Test</p>
     <p>Тестовое \\ Wezom</p>
   </footer>
-
+<script src="./assets/js/slider.js"></script>
 </body>
 
 </html>
