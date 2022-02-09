@@ -28,3 +28,5 @@ class Slider{
 }
 let slider = new Slider();
 slider.showSlides(slideIndex);
+
+
