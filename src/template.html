@@ -89,7 +89,7 @@
           <div class="tool-panel">
             <a class="tool-btn" href="#"><img src="assets/img/icons/scales-icon.svg" alt="" /></a>
             <a class="tool-btn" href="#"><img src="assets/img/icons/heart-icon.svg" alt="" /></a>
-            <button type="button" class="tool-btn btn">
+            <button type="button" class="tool-btn btn" >
               <span class="iterator">
                 1
               </span>
@@ -287,7 +287,7 @@
               </section>
             </div>
 
-            <div class="comments float-end pe-4">
+            <div class="comments float-end pe-4 mb-2">
               <section>
                 <div class="comments-declaration d-flex">
                   <h4>Відгуки покупців <span>12</span></h4>
@@ -295,8 +295,8 @@
                       class="path-right"></a>
                 </div>
                 <article class="user-comment">
-                  <div class="mt-4"><span class="user-login fw-bold">Іванова Карина</span> <span
-                      class="date-of-comment">/ 21 травня 2021</span>
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
                     <span class="product-rating-star">
                       <i class="fas fa-star rating-color"></i>
                       <i class="fas fa-star rating-color"></i>
@@ -305,18 +305,30 @@
                       <i class="fas fa-star"></i>
                     </span>
                   </div>
-                  <p class="mt-3 comment-body">Купівля цього товару була спонтанною та незапланованою.
-                    Протягом години прочитала відгуки та зупинилася на цій модельці.
-                    Спочатку знала, що пластини не знімні, але плюсів було більше.
-                    Дякуємо за блискавичну відправку! 2 дні з моменту замовлення та єдиний нюанс-все-таки знімні
-                    пластини зручніше, напевно.
-                    Але за порадами більш досвідчених я ставила пергамент, але мити все одно складно.</p>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
                 </article>
-                <hr>
+                
 
                 <article class="user-comment">
-                  <div class="mt-4"><span class="user-login fw-bold">Рогозін Тимур</span> <span
-                      class="date-of-comment">/ 17 травня 2021</span>
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
+                    <span class="product-rating-star">
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
+                </article>
+               
+
+                <article class="user-comment" style="display:none">
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
                     <span class="product-rating-star">
                       <i class="fas fa-star rating-color"></i>
                       <i class="fas fa-star rating-color"></i>
@@ -325,14 +337,62 @@
                       <i class="fas fa-star"></i>
                     </span>
                   </div>
-                  <p class="mt-3 comment-body">Купівля цього товару була спонтанною та незапланованою.
-                    Протягом години прочитав відгуки та зупинився на цій модельці.
-                    Дякуємо за блискавичну відправку!</p>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
                 </article>
+              
 
-              </section>
+                <article class="user-comment" style="display:none">
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
+                    <span class="product-rating-star">
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
+                </article>
+                
+
+                <article class="user-comment" style="display:none">
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
+                    <span class="product-rating-star">
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
+                </article>
+                
+
+                <article class="user-comment"  style="display:none">
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
+                    <span class="product-rating-star">
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
+                </article>
+              
+                </section>
+
               <div class="d-flex justify-content-center">
-                <a class="more-comments btn">Показати ще</a>
+                <a class="more-comments btn" id="loadMore" onclick="loadMoreComments.addHeightAfterClick();loadMoreComments.addMarginTopForRecallBlock()">Показати ще</a>
               </div>
             </div>
           </div>
@@ -358,7 +418,9 @@
     <p>2022 © Wezom Test</p>
     <p>Тестовое \\ Wezom</p>
   </footer>
+  
 <script src="./assets/js/slider.js"></script>
+<script src="./assets/js/loadmore.js"></script>
 </body>
 
 </html>
