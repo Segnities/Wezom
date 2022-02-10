@@ -1,4 +1,4 @@
-console.log('HI FROM VENDOR.JS PROMOUTER!');
+console.log('HI FROM VENDOR!');
 import 'bootstrap';
 
 
