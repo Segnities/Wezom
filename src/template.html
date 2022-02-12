@@ -46,14 +46,8 @@
           <div class="catalog dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <svg width="29" height="23" viewbox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg" display="none">
-                <symbol id="burger">
-                <g>
-                <path d="M1.5 2H27M27 21.5H1.5M1.5 11.5H17" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                </g>
-                </symbol>
-            </svg>
-              <svg><use href="#burger"></use></svg>
+             
+              <svg><use href="./assets/img/icons/burger.svg#burger"></use></svg>
               <b class="h5">каталог</b>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -87,13 +81,13 @@
             </form>
           </div>
           <div class="tool-panel">
-            <a class="tool-btn" href="#"><img src="assets/img/icons/scales-icon.svg" alt="" /></a>
-            <a class="tool-btn" href="#"><img src="assets/img/icons/heart-icon.svg" alt="" /></a>
-            <button type="button" class="tool-btn btn" >
+            <a class="tool-btn" href="#"><svg class="svg-icon"><use href="./assets/img/icons/scales-icon.svg#scales" class="svg-icon-scales"></use></svg></a>
+            <a class="tool-btn" href="#"><svg class="svg-icon"><use href="./assets/img/icons/heart-icon.svg#heart" class="svg-icon-heart"></use></svg></a>
+            <button type="button" class="tool-btn btn product-order" data-bs-toggle="popover" data-bs-placement="bottom">
               <span class="iterator">
                 1
               </span>
-              <img src="assets/img/icons/basket-icon.svg" alt="" class="basket" />
+              <svg class="svg-basket"><use href="./assets/img/icons/basket-icon.svg#basket" class="svg-icon-basket"></use></svg>
             </button>
           </div>
         </div>
@@ -173,12 +167,10 @@
               </div>
 
               <div class="product-action d-flex">
-                <button type="button" class="btn btn-success"><span class="fs-5 fw-bolder">У кошик</span><img
-                    src="assets/img/icons/basket-white-icon.svg" alt="" class="float-end"></button>
-                <a class="tool-btn" style="margin-left:10px"><img src="assets/img/icons/scales-icon.svg" alt="" /></a>
-                <a class="tool-btn"><img src="assets/img/icons/heart-icon.svg" alt="" /></a>
-                <a class="tool-btn" style="margin-left:10px"><img src="assets/img/icons/phone-icon.svg"
-                    alt=""><span>Купити в <br>1 клік</span></a>
+                <button type="button" class="btn btn-success"><span class="fs-5 fw-bolder">У кошик</span><svg class="float-end button-basket"><use href="./assets/img/icons/basket-icon.svg#basket" class="svg-button-basket"></use></svg></button>
+                <a class="tool-btn" style="margin-left:10px"><svg class="svg-icon"><use href="./assets/img/icons/scales-icon.svg#scales" class="svg-icon-scales"></use></svg></a>
+                <a class="tool-btn"><svg class="svg-icon"><use href="./assets/img/icons/heart-icon.svg#heart" class="svg-icon-heart"></use></svg></a>
+                <a class="tool-btn" style="margin-left:10px"><svg class="phone-button"><use href="./assets/img/icons/phone-icon.svg#phone" class="svg-icon-phone"></use></svg><span>Купити в <br>1 клік</span></a>
               </div>
 
 
@@ -189,8 +181,7 @@
                     <h2 class="accordion-header" id="heading-protection">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse-protection" aria-expanded="false" aria-controls="collapse-protection">
-                        <img src="assets/img/icons/protection-icon.svg" alt=""> <span
-                          class="fw-bold ms-2">Гарантія</span>
+                        <img src="assets/img/icons/protection-icon.svg" alt=""> <span class="fw-bold ms-2">Гарантія</span>
                       </button>
                     </h2>
                     <div id="collapse-protection" class="accordion-collapse collapse"
@@ -378,8 +369,8 @@
                   <div class="mt-4"><span class="user-login fw-bold"></span> <span
                       class="date-of-comment"></span>
                     <span class="product-rating-star">
-                      <i class="fas fa-star rating-color"></i>
-                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -418,7 +409,7 @@
     <p>2022 © Wezom Test</p>
     <p>Тестовое \\ Wezom</p>
   </footer>
-  
+
 <script src="./assets/js/slider.js"></script>
 <script src="./assets/js/loadmore.js"></script>
 </body>

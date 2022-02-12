@@ -1,0 +1,53 @@
+$icon-color: #33485D;
+/*SVG - styles*/
+.svg-icon{
+    width: 50px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    .svg-icon-scales{
+        fill:$icon-color;
+        &:hover{
+            fill:#9EB2C7;
+        }
+    }
+    .svg-icon-heart{
+        fill: $icon-color;
+        &:hover{
+            fill: 9EB2C7;
+        }
+    }
+}
+.svg-basket{
+    width: 50px;
+    height: 30px;
+    margin-left: 5px;
+    .svg-icon-basket{
+        fill: $icon-color;
+        &:hover{
+            fill:#fff;
+        }
+    }
+}
+.button-basket{
+    width: 50px;
+    height: 30px;
+    margin-left: 5px;
+    padding-left: 20px;
+    .svg-button-basket{
+        fill: #fff;
+        &:hover{
+            fill: #9EB2C7;
+        }
+    }
+}
+.phone-button{
+    margin-left:19px;
+    height:40px;
+    .svg-icon-phone{
+        fill:$icon-color;
+        &:hover{
+            fill: orange;
+        }
+    }
+}
