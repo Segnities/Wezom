@@ -22,11 +22,45 @@
 //MIXINS
 @import './mixins.scss';
 
+//SVG-Style
+@import './svg-styles.scss';
+
 //STYLES
+
+//POPOVER
+.popover-body{
+    color: $dark-blue;
+}
+.get-order{
+    width: 200px;
+    height: 50px;
+    background-color:#47B39C !important;
+    border-radius: 8px 0 8px 0 !important;
+    color: white !important;
+    font-size: 16px !important;
+    >span{
+        float:left;
+        padding-top: 3px;
+    }
+    >img{
+        width:25px;
+      }
+}
+.basket{
+    height:50px;
+    width:50px;
+  }
+.redact-order{
+    color:#33485D;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #5C6D7D;
+}
 
 //Header start
 body{
     color: $dark-blue;
+    font-family: 'Roboto-Regular';
 }
 //Navbar start
 .navbar {
@@ -247,19 +281,12 @@ body{
         a {
             width: 70px;
         }
-
-        img {
-            margin-left: 3px;
-        }
-
         .tool-btn {
             border: 1px solid orange;
             width: 70px;
             height: 100%;
-
             &:hover {
-                @include hover-icon();
-
+                
                 .iterator {
                     background-color: white;
                 }
@@ -285,8 +312,8 @@ body{
             }
 
             .iterator {
-                width: 20px;
-                height: 20px;
+                width: 18px;
+                height: 18px;
                 background-color: #FFBE48;
                 z-index: 0;
                 position: absolute;
@@ -492,29 +519,17 @@ body{
             width: 70px;
             height: 50px;
             border-radius: 0px;
-
-            img {
-                padding-left: 15px;
-                padding-top: 12px;
-            }
-
-            &:hover {
-                @include hover-icon();
-            }
-
-            img {
-                margin-left: 5px;
+            cursor: pointer;
+            svg{
                 cursor: pointer;
             }
-
             &:last-child {
                 border: 1px solid orange;
                 width: 31%;
                 height: 50px;
                 border-radius: 0 0 10px 0;
-                cursor: pointer;
 
-                img {
+                svg {
                     width: 42px;
                     padding-top: 10px;
                 }

@@ -1,7 +1,7 @@
 import "./main.scss";
 
-
 import data from './comments.json';
+
 
 /*document.getElementsByClassName('user-login')[0].innerHTML =  data.user1.name;
 document.getElementsByClassName('date-of-comment')[0].innerHTML = data.user1.date;
