@@ -35,7 +35,7 @@
           <li><a href="#"><b>Ru</b></a></li>
         </ul>
         <div class="authorization">
-          <a href="#"><b>Увійти</b><img src="assets/img/icons/authorazation-icon.svg" alt="#" class="ms-2"></a>
+          <a href="#"><b>Увійти</b><svg class="ms-2"><use href="./sprites.svg#authorazation"></use></svg></a>
         </div>
       </div>
     </nav>
@@ -46,7 +46,8 @@
           <div class="catalog dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="assets/img/icons/burger.svg" alt="">
+             
+              <svg><use href="./assets/img/icons/burger.svg#burger"></use></svg>
               <b class="h5">каталог</b>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -80,13 +81,13 @@
             </form>
           </div>
           <div class="tool-panel">
-            <a class="tool-btn" href="#"><img src="assets/img/icons/scales-icon.svg" alt="" /></a>
-            <a class="tool-btn" href="#"><img src="assets/img/icons/heart-icon.svg" alt="" /></a>
-            <button type="button" class="tool-btn btn">
+            <a class="tool-btn" href="#"><svg class="svg-icon"><use href="./assets/img/icons/scales-icon.svg#scales" class="svg-icon-scales"></use></svg></a>
+            <a class="tool-btn" href="#"><svg class="svg-icon"><use href="./assets/img/icons/heart-icon.svg#heart" class="svg-icon-heart"></use></svg></a>
+            <button type="button" class="tool-btn btn product-order" data-bs-toggle="popover" data-bs-placement="bottom">
               <span class="iterator">
                 1
               </span>
-              <img src="assets/img/icons/basket-icon.svg" alt="" class="basket" />
+              <svg class="svg-basket"><use href="./assets/img/icons/basket-icon.svg#basket" class="svg-icon-basket"></use></svg>
             </button>
           </div>
         </div>
@@ -112,19 +113,25 @@
           <div class="product-show d-md-flex">
             <div class="product-images float-start w-55">
               <aside class="product-scroller float-start h-100">
-                <input type="image" src="assets/img/icons/path-up.svg" alt="#" class="path-scroller">
-                <button class="active-product-scroller product-scroller-img"><img
+                <input type="image" src="assets/img/icons/path-up.svg" alt="#" class="path-scroller" onclick="slider.nextSlide(-1)">
+                <button class="product-scroller-img" onclick="slider.currentSlide(1)"><img
                     src="assets/img/products/product-in-scroll-1.svg" loading="lazy" alt=""></button>
-                <button class="product-scroller-img"><img src="assets/img/products/product-in-scroll-2.svg"
+                <button class="product-scroller-img " onclick="slider.currentSlide(2)"><img src="assets/img/products/product-in-scroll-2.svg"
                     loading="lazy" alt=""></button>
-                <button class="product-scroller-img"><img src="assets/img/products/product-in-scroll-3.svg"
+                <button class="product-scroller-img" onclick="slider.currentSlide(3)"><img src="assets/img/products/product-in-scroll-3.svg"
                     loading="lazy" alt=""></button>
-                <button class="product-scroller-img"><img src="assets/img/products/product-in-scroll-4.svg"
+                <button class="product-scroller-img" onclick="slider.currentSlide(4)"><img src="assets/img/products/product-in-scroll-4.svg"
                     loading="lazy" alt=""></button>
-                <input type="image" src="assets/img/icons/path-down.svg" alt="#" class="path-scroller">
+                <input type="image" src="assets/img/icons/path-down.svg" alt="#" class="path-scroller" onclick="slider.nextSlide(1)">
               </aside>
-              <img src="assets/img/products/main-product.svg" alt="" id="carouselExampleIndicators"
-                class="main-product-img" loading="lazy">
+              
+              <img src="assets/img/products/main-product.svg" alt="" class="main-product-img" loading="lazy">
+              <img src="assets/img/products/product-in-scroll-1.svg" alt="" class="main-product-img" loading="lazy">
+              <img src="assets/img/products/product-in-scroll-2.svg" alt="" class="main-product-img" loading="lazy">
+              <img src="assets/img/products/product-in-scroll-3.svg" alt="" class="main-product-img" loading="lazy">
+              <img src="assets/img/products/product-in-scroll-4.svg" alt="" class="main-product-img" loading="lazy">
+                
+              
             </div>
 
             <div class="product-deal-part float-end w-45">
@@ -160,12 +167,10 @@
               </div>
 
               <div class="product-action d-flex">
-                <button type="button" class="btn btn-success"><span class="fs-5 fw-bolder">У кошик</span><img
-                    src="assets/img/icons/basket-white-icon.svg" alt="" class="float-end"></button>
-                <a class="tool-btn" style="margin-left:10px"><img src="assets/img/icons/scales-icon.svg" alt="" /></a>
-                <a class="tool-btn"><img src="assets/img/icons/heart-icon.svg" alt="" /></a>
-                <a class="tool-btn" style="margin-left:10px"><img src="assets/img/icons/phone-icon.svg"
-                    alt=""><span>Купити в <br>1 клік</span></a>
+                <button type="button" class="btn btn-success"><span class="fs-5 fw-bolder">У кошик</span><svg class="float-end button-basket"><use href="./assets/img/icons/basket-icon.svg#basket" class="svg-button-basket"></use></svg></button>
+                <a class="tool-btn" style="margin-left:10px"><svg class="svg-icon"><use href="./assets/img/icons/scales-icon.svg#scales" class="svg-icon-scales"></use></svg></a>
+                <a class="tool-btn"><svg class="svg-icon"><use href="./assets/img/icons/heart-icon.svg#heart" class="svg-icon-heart"></use></svg></a>
+                <a class="tool-btn" style="margin-left:10px"><svg class="phone-button"><use href="./assets/img/icons/phone-icon.svg#phone" class="svg-icon-phone"></use></svg><span>Купити в <br>1 клік</span></a>
               </div>
 
 
@@ -176,8 +181,7 @@
                     <h2 class="accordion-header" id="heading-protection">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse-protection" aria-expanded="false" aria-controls="collapse-protection">
-                        <img src="assets/img/icons/protection-icon.svg" alt=""> <span
-                          class="fw-bold ms-2">Гарантія</span>
+                        <img src="assets/img/icons/protection-icon.svg" alt=""> <span class="fw-bold ms-2">Гарантія</span>
                       </button>
                     </h2>
                     <div id="collapse-protection" class="accordion-collapse collapse"
@@ -274,7 +278,7 @@
               </section>
             </div>
 
-            <div class="comments float-end pe-4">
+            <div class="comments float-end pe-4 mb-2">
               <section>
                 <div class="comments-declaration d-flex">
                   <h4>Відгуки покупців <span>12</span></h4>
@@ -282,8 +286,8 @@
                       class="path-right"></a>
                 </div>
                 <article class="user-comment">
-                  <div class="mt-4"><span class="user-login fw-bold">Іванова Карина</span> <span
-                      class="date-of-comment">/ 21 травня 2021</span>
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
                     <span class="product-rating-star">
                       <i class="fas fa-star rating-color"></i>
                       <i class="fas fa-star rating-color"></i>
@@ -292,18 +296,30 @@
                       <i class="fas fa-star"></i>
                     </span>
                   </div>
-                  <p class="mt-3 comment-body">Купівля цього товару була спонтанною та незапланованою.
-                    Протягом години прочитала відгуки та зупинилася на цій модельці.
-                    Спочатку знала, що пластини не знімні, але плюсів було більше.
-                    Дякуємо за блискавичну відправку! 2 дні з моменту замовлення та єдиний нюанс-все-таки знімні
-                    пластини зручніше, напевно.
-                    Але за порадами більш досвідчених я ставила пергамент, але мити все одно складно.</p>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
                 </article>
-                <hr>
+                
 
                 <article class="user-comment">
-                  <div class="mt-4"><span class="user-login fw-bold">Рогозін Тимур</span> <span
-                      class="date-of-comment">/ 17 травня 2021</span>
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
+                    <span class="product-rating-star">
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
+                </article>
+               
+
+                <article class="user-comment" style="display:none">
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
                     <span class="product-rating-star">
                       <i class="fas fa-star rating-color"></i>
                       <i class="fas fa-star rating-color"></i>
@@ -312,14 +328,62 @@
                       <i class="fas fa-star"></i>
                     </span>
                   </div>
-                  <p class="mt-3 comment-body">Купівля цього товару була спонтанною та незапланованою.
-                    Протягом години прочитав відгуки та зупинився на цій модельці.
-                    Дякуємо за блискавичну відправку!</p>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
                 </article>
+              
 
-              </section>
+                <article class="user-comment" style="display:none">
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
+                    <span class="product-rating-star">
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
+                </article>
+                
+
+                <article class="user-comment" style="display:none">
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
+                    <span class="product-rating-star">
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star rating-color"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
+                </article>
+                
+
+                <article class="user-comment"  style="display:none">
+                  <div class="mt-4"><span class="user-login fw-bold"></span> <span
+                      class="date-of-comment"></span>
+                    <span class="product-rating-star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                  <p class="mt-3 comment-body"></p>
+                  <hr>
+                </article>
+              
+                </section>
+
               <div class="d-flex justify-content-center">
-                <a class="more-comments btn">Показати ще</a>
+                <a class="more-comments btn" id="loadMore" onclick="loadMoreComments.addHeightAfterClick();loadMoreComments.addMarginTopForRecallBlock()">Показати ще</a>
               </div>
             </div>
           </div>
@@ -329,8 +393,9 @@
             <div class="client-tel d-flex justify-content-center">
               <form action="#" method="post" class="mt-3">
                 <div class="input-group">
-                  <input type="tel" placeholder="+38(0XX) XX-XX-XXX" class="form-control">
-                  <button class="btn btn-send-phone" type="button">Відправити</button>
+                  <input type="tel" placeholder="+38 (0XX)-XX-XX-XXX" class="form-control"
+                  pattern="^\+[38]{2}\s\((\d{3})\)-\d{2}-\d{2}-\d{3}" required>
+                  <button class="btn btn-send-phone" type="submit">Відправити</button>
                 </div>
               </form>
             </div>
@@ -342,9 +407,11 @@
 
   <footer class="copyright">
     <p>2022 © Wezom Test</p>
-    <p>Тестовое \\ Wezom</p>
+    <p>Тестове \\ Wezom</p>
   </footer>
 
+<script src="./assets/js/slider.js"></script>
+<script src="./assets/js/loadmore.js"></script>
 </body>
 
 </html>

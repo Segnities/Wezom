@@ -1,6 +1,5 @@
 @mixin navbar-hover-effect() {
     &:hover {
-        font-weight: bolder;
         border-bottom: 1px solid $dark-grey;
         padding-bottom: 3px;
         color: $dark-grey;
@@ -54,7 +53,10 @@
             a {
                 color: $dark-blue;
                 text-decoration: none;
-                @include navbar-hover-effect();
+                &:hover{
+                    color: #5C6D7D;
+                }
+                
             }
 
         }
