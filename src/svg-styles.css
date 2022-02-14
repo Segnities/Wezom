@@ -1,0 +1,66 @@
+/*SVG - styles*/
+.svg-icon {
+  width: 50px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.svg-icon .svg-icon-scales {
+  fill: #33485D;
+}
+
+.svg-icon .svg-icon-scales:hover {
+  fill: #9EB2C7;
+}
+
+.svg-icon .svg-icon-heart {
+  fill: #33485D;
+}
+
+.svg-icon .svg-icon-heart:hover {
+  fill: 9EB2C7;
+}
+
+.svg-basket {
+  width: 50px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.svg-basket .svg-icon-basket {
+  fill: #33485D;
+}
+
+.svg-basket .svg-icon-basket:hover {
+  fill: #fff;
+}
+
+.button-basket {
+  width: 50px;
+  height: 30px;
+  margin-left: 5px;
+  padding-left: 20px;
+}
+
+.button-basket .svg-button-basket {
+  fill: #fff;
+}
+
+.button-basket .svg-button-basket:hover {
+  fill: #9EB2C7;
+}
+
+.phone-button {
+  margin-left: 19px;
+  height: 40px;
+}
+
+.phone-button .svg-icon-phone {
+  fill: #33485D;
+}
+
+.phone-button .svg-icon-phone:hover {
+  fill: orange;
+}
+/*# sourceMappingURL=svg-styles.css.map */
