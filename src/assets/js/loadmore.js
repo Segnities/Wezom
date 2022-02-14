@@ -36,5 +36,7 @@ let loadMoreComments = new LoadMore();
 loadMoreComments.loadMoreCommentsEventOnclick();
 
 
+
+
 /*let main = document.querySelector('.main-product-cart');
 let offsetMainHeight = main.offsetHeight;*/
