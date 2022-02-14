@@ -23,3 +23,9 @@ let parseComments = new Comments();
 parseComments.parseCommentsFromJson();
 
 
+
+
+
+
+/*let main = document.querySelector('.main-product-cart');
+let offsetMainHeight = main.offsetHeight;*/
